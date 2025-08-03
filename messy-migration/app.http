@@ -1,0 +1,39 @@
+### Get all users
+GET http://localhost:5009/users
+
+### Add a new user
+POST http://localhost:5009/users
+Content-Type: application/json
+
+{
+  "name": "Siri",
+  "email": "siri@example.com",
+  "password": "siri147"
+}
+
+### Get user by id
+GET http://localhost:5009/user/4
+
+### Update user
+PUT http://localhost:5009/user/4
+Content-Type: application/json
+
+{
+  "name": "Sireesha",
+  "email": "sireesha@example.com"
+}
+
+### Delete user
+DELETE http://localhost:5009/user/4
+
+### Search Users by Name
+GET http://localhost:5009/search?name=Siri
+
+### User Login
+POST http://localhost:5009/login
+Content-Type: application/json
+
+{
+  "email": "siri@example.com",
+  "password": "siri147"
+}
